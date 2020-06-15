@@ -2,6 +2,8 @@ import UIKit
 import UIExtensions
 
 public enum ThemeButtonStyle {
+    case primaryBlue
+    case primaryWhite
     case primaryYellow
     case primaryGreen
     case primaryRed
@@ -170,7 +172,24 @@ extension ThemeButton {
         titleLabel?.font = ThemeButton.titleFont(for: style)
 
         switch style {
-
+        case .primaryWhite:
+            applyPrimary()
+            
+            setTitleColor(.black, for: .normal)
+            setTitleColor(.themeGray50, for: .disabled)
+            
+            setBackgroundColor(.themeWhite, blendColor: UIColor(white: 1, alpha: 0.4), forState: .normal)
+            setBackgroundColor(.themeWhite, forState: .highlighted)
+            setBackgroundColor(.themeSteel20, forState: .disabled)
+        case .primaryBlue:
+            applyPrimary()
+            
+            setTitleColor(.black, for: .normal)
+            setTitleColor(.themeGray50, for: .disabled)
+            
+            setBackgroundColor(.themeBlueL, blendColor: UIColor(white: 1, alpha: 0.4), forState: .normal)
+            setBackgroundColor(.themeBlueD, forState: .highlighted)
+            setBackgroundColor(.themeSteel20, forState: .disabled)
         case .primaryYellow:
             applyPrimary()
 
@@ -281,7 +300,7 @@ extension ThemeButton {
 
     private static func titleFont(for style: ThemeButtonStyle) -> UIFont {
         switch style {
-        case .primaryYellow, .primaryGreen, .primaryRed, .primaryGray, .primaryTransparent: return .headline2
+        case .primaryBlue, .primaryWhite, .primaryYellow, .primaryGreen, .primaryRed, .primaryGray, .primaryTransparent: return .headline2
         case .secondaryDefault, .secondaryTransparent: return .subhead1
         case .secondaryIcon: return .systemFont(ofSize: 1) // titleLabel should not affect button size, that is why we set smallest font
         }
