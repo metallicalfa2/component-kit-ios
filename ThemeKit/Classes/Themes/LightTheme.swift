@@ -12,8 +12,8 @@ class LightTheme: ITheme {
         return .default
     }
 
-    let colorJacob: UIColor = .themeYellowL
-    let colorRemus: UIColor = .themeGreenL
+    let colorJacob: UIColor = .themeBlueD
+    let colorRemus: UIColor = .themeGray
     let colorLucian: UIColor = .themeRedL
     let colorOz: UIColor = .themeDark
     let colorLeah: UIColor = .themeSteelDark
@@ -29,6 +29,8 @@ class LightTheme: ITheme {
     var colorCassandra: UIColor = .themeLightGray
     var colorRaina: UIColor = .themeWhite50
     var colorBran: UIColor = .themeDark
+    var colourIncomingTx: UIColor = .themeGreenL
+    var colourOutgoingTx: UIColor = .themeGray
 
     let alphaSecondaryButtonGradient: CGFloat = 1
 }

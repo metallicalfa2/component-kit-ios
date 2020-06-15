@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/horizontalsystems/component-kit-ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Horizontal Systems' => 'hsdao@protonmail.ch' }
-  s.source           = { git: 'https://github.com/horizontalsystems/component-kit-ios.git', tag: "language-kit-#{s.version}" }
+  s.source           = { git: 'https://github.com/rathishubham7/component-kit-ios.git', branch: "master" }
   s.social_media_url = 'http://horizontalsystems.io/'
 
   s.ios.deployment_target = '11.0'
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.resource_bundle = { 'CurrencyKit' => ['CurrencyKit/Assets/*.xcassets', 'CurrencyKit/Assets/*.lproj/*.strings'] }
 
   s.dependency 'SectionsTableView.swift', '~> 1.1'
-  s.dependency 'ThemeKit.swift', '~> 1.0'
+  s.dependency 'ThemeKit.swift', '~> 0.0.1'
   s.dependency 'LanguageKit.swift', '~> 1.0'
   s.dependency 'StorageKit.swift', '~> 1.0'
   s.dependency 'RxSwift', '~> 5.0'

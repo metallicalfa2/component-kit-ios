@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/horizontalsystems/component-kit-ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Horizontal Systems' => 'hsdao@protonmail.ch' }
-  s.source           = { git: 'https://github.com/horizontalsystems/component-kit-ios.git', tag: "storage-kit-#{s.version}" }
+  s.source           = { git: 'https://github.com/rathishubham7/component-kit-ios.git', branch: 'master'}
   s.social_media_url = 'http://horizontalsystems.io/'
 
   s.ios.deployment_target = '11.0'
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source_files = 'StorageKit/Classes/**/*'
   s.resource_bundle = { 'StorageKit' => ['StorageKit/Assets/*.xcassets', 'StorageKit/Assets/*.lproj/*.strings'] }
 
-  s.dependency 'ThemeKit.swift', '~> 1.0'
+  s.dependency 'ThemeKit.swift', '~> 0.0.1'
   s.dependency 'LanguageKit.swift', '~> 1.0'
   s.dependency 'KeychainAccess', '~> 4.1'
 end

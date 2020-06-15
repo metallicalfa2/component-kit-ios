@@ -48,6 +48,9 @@ extension UIColor {
     public static var themeCassandra: UIColor { Theme.current.colorCassandra }
     public static var themeRaina: UIColor { Theme.current.colorRaina }
     public static var themeBran: UIColor { Theme.current.colorBran }
+    public static var colourIncomingTx: UIColor { Theme.current.colourIncomingTx }
+    public static var colourOutgoingTx: UIColor { Theme.current.colourOutgoingTx }
+
 }
 
 extension UIColor {

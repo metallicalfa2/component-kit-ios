@@ -6,8 +6,8 @@ class DarkTheme: ITheme {
     let navigationBarStyle: UIBarStyle = .blackTranslucent
     let statusBarStyle: UIStatusBarStyle = .lightContent
 
-    let colorJacob: UIColor = .themeYellowD
-    let colorRemus: UIColor = .themeGreenD
+    let colorJacob: UIColor = .themeBlueD
+    let colorRemus: UIColor = .themeGray
     let colorLucian: UIColor = .themeRedD
     let colorOz: UIColor = .themeLight
     let colorLeah: UIColor = .themeSteelLight
@@ -23,6 +23,8 @@ class DarkTheme: ITheme {
     var colorCassandra: UIColor = .themeDark
     var colorRaina: UIColor = .themeSteel10
     var colorBran: UIColor = .themeLightGray
+    var colourIncomingTx: UIColor = .themeGreenL
+    var colourOutgoingTx: UIColor = .themeGray
 
     let alphaSecondaryButtonGradient: CGFloat = 0.4
 }
