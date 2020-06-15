@@ -40,7 +40,7 @@ open class BalanceDoubleRowView: UIView {
         if let currencyValue = currencyValue {
             currencyValueLabel.set(hidden: false, animated: animated, duration: duration)
             currencyValueLabel.text = currencyValue.text
-            currencyValueLabel.textColor = currencyValue.dimmed ? .themeYellow50 : .themeJacob
+            currencyValueLabel.textColor = currencyValue.dimmed ? .themeBlueD : .themeBlueD
         } else {
             currencyValueLabel.set(hidden: true, animated: animated, duration: duration)
         }
