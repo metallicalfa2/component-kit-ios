@@ -3,6 +3,9 @@ import UIExtensions
 extension UIColor {
     public static let themeBlueD = UIColor(hex: 0x0364ff)
     public static let themeBlueL = UIColor(hex: 0x0364ff)
+    public static let torusGray = UIColor(hex: 0x0E2E67)
+    public static let torusGray2 = UIColor(hex: 0x5C6C7F)
+
     public static let themeYellowD = UIColor(hex: 0xffa800)
     public static let themeYellowL = UIColor(hex: 0xff8a00)
     public static let themeGreenD = UIColor(hex: 0x05c46b)

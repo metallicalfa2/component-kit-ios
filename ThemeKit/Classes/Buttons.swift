@@ -175,7 +175,7 @@ extension ThemeButton {
         case .primaryWhite:
             applyPrimary()
             
-            setTitleColor(.black, for: .normal)
+            setTitleColor(.torusGray, for: .normal)
             setTitleColor(.themeGray50, for: .disabled)
             
             setBackgroundColor(.themeWhite, blendColor: UIColor(white: 1, alpha: 0.4), forState: .normal)
@@ -184,8 +184,8 @@ extension ThemeButton {
         case .primaryBlue:
             applyPrimary()
             
-            setTitleColor(.black, for: .normal)
-            setTitleColor(.themeGray50, for: .disabled)
+            setTitleColor(.themeWhite, for: .normal)
+            setTitleColor(.torusGray, for: .disabled)
             
             setBackgroundColor(.themeBlueL, blendColor: UIColor(white: 1, alpha: 0.4), forState: .normal)
             setBackgroundColor(.themeBlueD, forState: .highlighted)
@@ -223,7 +223,7 @@ extension ThemeButton {
         case .primaryGray:
             applyPrimary()
 
-            setTitleColor(.black, for: .normal)
+            setTitleColor(.torusGray2, for: .normal)
             setTitleColor(.themeGray50, for: .disabled)
 
             setBackgroundColor(.themeLightGray, blendColor: UIColor(white: 1, alpha: 1), forState: .normal)
